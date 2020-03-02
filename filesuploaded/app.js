@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.post('/api/upload', multipartMiddleware, (req, res) => {
+    
     res.json({
         'message': 'File uploaded succesfully.'
     });

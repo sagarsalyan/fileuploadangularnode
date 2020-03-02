@@ -4,9 +4,7 @@
             <h1>Angular File Upload</h1>
         </div>
         <div class="row margin25">
-
             <div class="col-md-4">
-
             </div>
             <div class="col-md-4">
                 <div class="input-group">
@@ -15,14 +13,13 @@
                     </div>
                     <div class="custom-file">
                         <form action="/api/upload" method="post" enctype="multipart/form-data">
-                            <input (change)="fileChange($event)" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                            <input (change)="fileChange($event)" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" multiple>
                         </form>
                         <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-
             </div>
         </div>
     </div>
